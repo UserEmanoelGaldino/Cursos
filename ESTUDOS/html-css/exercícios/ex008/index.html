@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outras Formatações</title>
 </head>
+
 <body>
     <h1>Demais Formatações</h1>
+    <h2>Código-Fonte / Pré-formatação.</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito na linguagem JavaScript.</p>
+   <p>Com a tag CODE você coloca o texto em questão em uma formatação que possui uma fonte monoespaçada. Isso auxilia na leitura do código.</p>
 
-    <h2>Código-Fonte</h2>
-    <p>O comando document.getElementById('teste') é escrito na linguagem JavaScript.</p>
+   <p><em>Observação importante! a tag CODE não possui identação de código, para que você possa notar na página o código com identação, é necessário envelopar a tag CODE na tag <strong>PRE</strong>, assim:</em></p>
+
+   <h3>Código em Python:</h3>
+   <pre>
+    <code>
+    nome = input('Informe o seu nome')
+    print(f'Olá {nome}, é um prazer te conhecer')
+    </code>
+   </pre>
+
+   <img src="imagens/condigo-fonte-identado.png" alt="Código HTML5">
+
+   <h2>Citações Simples</h2>
+   <p>Tag de citação: &lt;q&gt;&lt;/q&gt;</p>
+   <p>Como dizia meu pai: <q>Melhor um pássaro na mão do que dois voando.</q></p>
+
+   <h2>Citações Completas:</h2>
+   <p>Segundo Maurício Samy Silva, em seu livro <strong>Fundamentos de HTML5 e CSS<sub>3</sub></strong>:</p>
+   <blockquote cite="https://books.google.com.br/books?id=ZyJyDwAAQBAJ&printsec=frontcover&dq=html5&hl=pt-PT&sa=X&redir_esc=y#v=onepage&q=html5&f=false">
+    Este livro destina-se para iniciantes e estudantes interessados na criação de sites tanto na área de design quanto na área de desenvolvimento e programação, sem necessidade de conhecimento prévio....
+   </blockquote> <!--Esse parâmetro CITE diz a página de onde veio a informação exposta nessa citação completa.-->
+   <h2>Abreviações</h2>
+   <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr></p>
+   <p>Utilizado a tag ABBR para indição de abreviação. Essa tag possui o parâmetro TITLE que é onde colocamos o nome completo.</p>
+   <p><em>Atenção! Se parar o mouse em cima da abreviação, o nome completo é exposto. Como se fosse um hint.</em></p>
+
+   <h2>Texto Invertido:</h2>
+   <p><bdo dir="rtl">Este testo será apresentado invertido.</bdo></p>
+   <p><bdo dir="ltr">Este testo será apresentado invertido.</bdo></p>
+   <p><em>Atenção! a tag utilizada foi <strong>BDO</strong>. Ela possui o parâmetro <strong>dir</strong> de direção. Nesse parâmetro, você diz o sentido da apresentação pelos valores: <br></em>
+    <mark>rtl</mark>: Right to Left <br>
+    <mark>ltr</mark>: Left to Right
+    </p>
+   
+
+
 </body>
+
 </html>
